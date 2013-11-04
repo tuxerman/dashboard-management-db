@@ -1,0 +1,155 @@
+-- Do NOT EDIT. THIS IS A GENERATED FILE.
+-- Premature optimization is the root of all evil.
+drop table m_aggl3bitrate cascade;
+drop trigger if exists gen_id_m_aggl3bitrate_update on m_aggl3bitrate cascade;
+drop trigger if exists gen_id_m_aggl3bitrate_insert on m_aggl3bitrate cascade;
+create table m_aggl3bitrate (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_aggl3bitrate_update before update on m_aggl3bitrate
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_aggl3bitrate_insert before insert on m_aggl3bitrate for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_aggl3bitrate ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_aggl3bitrate ALTER COLUMN id set storage EXTERNAL;
+drop table m_bitrate cascade;
+drop trigger if exists gen_id_m_bitrate_update on m_bitrate cascade;
+drop trigger if exists gen_id_m_bitrate_insert on m_bitrate cascade;
+create table m_bitrate (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_bitrate_update before update on m_bitrate
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_bitrate_insert before insert on m_bitrate for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_bitrate ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_bitrate ALTER COLUMN id set storage EXTERNAL;
+drop table m_capacity cascade;
+drop trigger if exists gen_id_m_capacity_update on m_capacity cascade;
+drop trigger if exists gen_id_m_capacity_insert on m_capacity cascade;
+create table m_capacity (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_capacity_update before update on m_capacity
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_capacity_insert before insert on m_capacity for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_capacity ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_capacity ALTER COLUMN id set storage EXTERNAL;
+drop table m_jitter cascade;
+drop trigger if exists gen_id_m_jitter_update on m_jitter cascade;
+drop trigger if exists gen_id_m_jitter_insert on m_jitter cascade;
+create table m_jitter (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_jitter_update before update on m_jitter
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_jitter_insert before insert on m_jitter for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_jitter ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_jitter ALTER COLUMN id set storage EXTERNAL;
+drop table m_lmrtt cascade;
+drop trigger if exists gen_id_m_lmrtt_update on m_lmrtt cascade;
+drop trigger if exists gen_id_m_lmrtt_insert on m_lmrtt cascade;
+create table m_lmrtt (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_lmrtt_update before update on m_lmrtt
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_lmrtt_insert before insert on m_lmrtt for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_lmrtt ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_lmrtt ALTER COLUMN id set storage EXTERNAL;
+drop table m_pktloss cascade;
+drop trigger if exists gen_id_m_pktloss_update on m_pktloss cascade;
+drop trigger if exists gen_id_m_pktloss_insert on m_pktloss cascade;
+create table m_pktloss (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_pktloss_update before update on m_pktloss
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_pktloss_insert before insert on m_pktloss for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_pktloss ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_pktloss ALTER COLUMN id set storage EXTERNAL;
+drop table m_rtt cascade;
+drop trigger if exists gen_id_m_rtt_update on m_rtt cascade;
+drop trigger if exists gen_id_m_rtt_insert on m_rtt cascade;
+create table m_rtt (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_rtt_update before update on m_rtt
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_rtt_insert before insert on m_rtt for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_rtt ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_rtt ALTER COLUMN id set storage EXTERNAL;
+drop table m_shaperate cascade;
+drop trigger if exists gen_id_m_shaperate_update on m_shaperate cascade;
+drop trigger if exists gen_id_m_shaperate_insert on m_shaperate cascade;
+create table m_shaperate (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_shaperate_update before update on m_shaperate
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_shaperate_insert before insert on m_shaperate for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_shaperate ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_shaperate ALTER COLUMN id set storage EXTERNAL;
+drop table m_ulrttdw cascade;
+drop trigger if exists gen_id_m_ulrttdw_update on m_ulrttdw cascade;
+drop trigger if exists gen_id_m_ulrttdw_insert on m_ulrttdw cascade;
+create table m_ulrttdw (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_ulrttdw_update before update on m_ulrttdw
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_ulrttdw_insert before insert on m_ulrttdw for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_ulrttdw ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_ulrttdw ALTER COLUMN id set storage EXTERNAL;
+drop table m_ulrttup cascade;
+drop trigger if exists gen_id_m_ulrttup_update on m_ulrttup cascade;
+drop trigger if exists gen_id_m_ulrttup_insert on m_ulrttup cascade;
+create table m_ulrttup (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_ulrttup_update before update on m_ulrttup
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_ulrttup_insert before insert on m_ulrttup for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_ulrttup ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_ulrttup ALTER COLUMN id set storage EXTERNAL;
+drop table m_dnsdelay cascade;
+drop trigger if exists gen_id_m_dnsdelay_update on m_dnsdelay cascade;
+drop trigger if exists gen_id_m_dnsdelay_insert on m_dnsdelay cascade;
+create table m_dnsdelay (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_dnsdelay_update before update on m_dnsdelay
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_dnsdelay_insert before insert on m_dnsdelay for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_dnsdelay ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_dnsdelay ALTER COLUMN id set storage EXTERNAL;
+drop table m_dnsdelayc cascade;
+drop trigger if exists gen_id_m_dnsdelayc_update on m_dnsdelayc cascade;
+drop trigger if exists gen_id_m_dnsdelayc_insert on m_dnsdelayc cascade;
+create table m_dnsdelayc (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_dnsdelayc_update before update on m_dnsdelayc
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_dnsdelayc_insert before insert on m_dnsdelayc for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_dnsdelayc ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_dnsdelayc ALTER COLUMN id set storage EXTERNAL;
+drop table m_dnsdelaync cascade;
+drop trigger if exists gen_id_m_dnsdelaync_update on m_dnsdelaync cascade;
+drop trigger if exists gen_id_m_dnsdelaync_insert on m_dnsdelaync cascade;
+create table m_dnsdelaync (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_dnsdelaync_update before update on m_dnsdelaync
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_dnsdelaync_insert before insert on m_dnsdelaync for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_dnsdelaync ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_dnsdelaync ALTER COLUMN id set storage EXTERNAL;
+drop table m_dnsfail cascade;
+drop trigger if exists gen_id_m_dnsfail_update on m_dnsfail cascade;
+drop trigger if exists gen_id_m_dnsfail_insert on m_dnsfail cascade;
+create table m_dnsfail (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_dnsfail_update before update on m_dnsfail
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_dnsfail_insert before insert on m_dnsfail for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_dnsfail ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_dnsfail ALTER COLUMN id set storage EXTERNAL;
+drop table m_dnsfailc cascade;
+drop trigger if exists gen_id_m_dnsfailc_update on m_dnsfailc cascade;
+drop trigger if exists gen_id_m_dnsfailc_insert on m_dnsfailc cascade;
+create table m_dnsfailc (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_dnsfailc_update before update on m_dnsfailc
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_dnsfailc_insert before insert on m_dnsfailc for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_dnsfailc ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_dnsfailc ALTER COLUMN id set storage EXTERNAL;
+drop table m_dnsfailnc cascade;
+drop trigger if exists gen_id_m_dnsfailnc_update on m_dnsfailnc cascade;
+drop trigger if exists gen_id_m_dnsfailnc_insert on m_dnsfailnc cascade;
+create table m_dnsfailnc (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_dnsfailnc_update before update on m_dnsfailnc
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_dnsfailnc_insert before insert on m_dnsfailnc for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_dnsfailnc ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_dnsfailnc ALTER COLUMN id set storage EXTERNAL;
+drop table m_mserver_rtt cascade;
+drop trigger if exists gen_id_m_mserver_rtt_update on m_mserver_rtt cascade;
+drop trigger if exists gen_id_m_mserver_rtt_insert on m_mserver_rtt cascade;
+create table m_mserver_rtt (like measurements_tmpl including defaults including constraints including indexes);
+create trigger gen_id_m_mserver_rtt_update before update on m_mserver_rtt
+	for each row execute procedure gen_id_measurement_update();
+create trigger gen_id_m_mserver_rtt_insert before insert on m_mserver_rtt for each row execute procedure gen_id_measurement_insert();
+alter TABLE m_mserver_rtt ALTER COLUMN toolid set storage EXTERNAL;
+alter TABLE m_mserver_rtt ALTER COLUMN id set storage EXTERNAL;
